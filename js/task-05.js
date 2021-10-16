@@ -5,4 +5,7 @@ inputEl.addEventListener('input', onInputChenge);
 
 function onInputChenge(event) {
   outputEl.textContent = event.currentTarget.value;
+  if (event.currentTarget.value === '') {
+    outputEl.textContent = 'Anonymous';
+  }
 }
